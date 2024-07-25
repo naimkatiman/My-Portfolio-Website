@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon/font/Flaticon.eot");
+  src: url("../fonts/flaticon/font/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticon/font/Flaticon.woff") format("woff"),
+       url("../fonts/flaticon/font/Flaticon.ttf") format("truetype"),
+       url("../fonts/flaticon/font/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon/font/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.icon [class^="flaticon-"]:before,
+.icon [class*=" flaticon-"]:before {   
+  font-family: Flaticon;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 50px;
+  color: #ffbd39;
+}
+
+/* AI Consulting and Power Talk */
+.flaticon-analysis:before { content: "\f102"; }
+
+/* Full-Stack Development */
+.flaticon-web-design:before { content: "\f104"; }
+
+/* Web Developer */
+.flaticon-ux-design:before { content: "\f103"; }
+
+/* Machine Learning App Integration */
+.flaticon-innovation:before { content: "\f106"; }
+
+/* Branding */
+.flaticon-idea:before { content: "\f105"; }
+
+/* Product Strategy */
+.flaticon-ideas:before { content: "\f100"; }
+
+.services-1 {
+  text-align: center;
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.services-1:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.services-1 .icon {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.services-1 .desc h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.ftco-animate {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ftco-animated {
+  opacity: 1;
+  visibility: visible;
+}
