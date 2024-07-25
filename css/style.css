@@ -4871,9 +4871,11 @@ input[type="button"].btn-block {
 }
 
 .navbar-logo {
-  height: 40px; /* Adjust this value to match your preferred logo size */
+  height: 40px;
+  /* Adjust this value to match your preferred logo size */
   width: auto;
-  margin-right: 10px; /* Space between logo and text */
+  margin-right: 10px;
+  /* Space between logo and text */
 }
 
 .navbar-brand:hover,
@@ -5316,6 +5318,60 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
+
+
+/* Navbar styles for mobile */
+@media (max-width: 991.98px) {
+  .ftco-navbar-light {
+    background: #000000 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .ftco-navbar-light.scrolled {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-top: 0px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .ftco-navbar-light .navbar-nav {
+    padding-bottom: 20px;
+    margin-right: 0;
+    background: #000000;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .ftco-navbar-light .navbar-nav.show {
+    max-height: 300px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .ftco-navbar-light .navbar-toggler {
+    border: none;
+    color: rgba(255, 255, 255, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: .1em;
+  }
+}
+
 
 .card {
   position: relative;
@@ -12065,7 +12121,8 @@ h5,
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #000; /* fallback color */
+  background-color: #000;
+  /* fallback color */
 }
 
 .container-fluid {
@@ -12083,7 +12140,8 @@ h5,
 }
 
 .text-content {
-  padding-left: 20%; /* Adjust this value to move text closer to or further from the center */
+  padding-left: 20%;
+  /* Adjust this value to move text closer to or further from the center */
   z-index: 2;
 }
 
@@ -12092,7 +12150,8 @@ h5,
   right: 0;
   top: 0;
   bottom: 0;
-  width: 60%; /* Adjust this to control how much of the image is shown */
+  width: 60%;
+  /* Adjust this to control how much of the image is shown */
   overflow: hidden;
 }
 
@@ -12103,8 +12162,10 @@ h5,
   top: 50%;
   right: 50;
   transform: translateY(-50%);
-  width: 100%; /* Adjust this to scale down the image size */
-  height: 100%; /* Adjust this to scale down the image size */
+  width: 100%;
+  /* Adjust this to scale down the image size */
+  height: 100%;
+  /* Adjust this to scale down the image size */
   overflow: hidden;
 }
 
@@ -12112,12 +12173,14 @@ h5,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center; /* Adjust this to fine-tune image position */
+  object-position: center;
+  /* Adjust this to fine-tune image position */
 }
 
 .hero .text {
   color: #fff;
-  max-width: 80%; /* Adjust this to control text width */
+  max-width: 80%;
+  /* Adjust this to control text width */
 }
 
 .hero .subheading {
@@ -12175,19 +12238,55 @@ h5,
   .video-column {
     height: 50vh;
   }
-  
+
   .text-content {
     text-align: center;
   }
-  
-  .hero h1, .hero h2 {
+
+  .hero h1,
+  .hero h2 {
     font-size: 36px;
   }
-  
+
   .hero h3 {
     font-size: 20px;
   }
 }
+
+/* Responsive adjustments for mobile */
+@media (max-width: 767px) {
+  .video-column {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: none;
+  }
+
+  .video-container video {
+    object-position: center center;
+  }
+
+  .text-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+
 
 .owl-carousel {
   position: relative;
@@ -12727,7 +12826,8 @@ h5,
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 125%; /* Adjust this value to change the aspect ratio */
+  padding-bottom: 125%;
+  /* Adjust this value to change the aspect ratio */
   overflow: hidden;
 }
 
@@ -12742,7 +12842,7 @@ h5,
 
 @media (max-width: 767px) {
   .video-about-container {
-      margin-bottom: 2em;
+    margin-bottom: 2em;
   }
 }
 
